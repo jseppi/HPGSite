@@ -1,0 +1,163 @@
+/*
+Theme Name: Hyde Park Gym Version 2
+Theme URI: http://hydeparkgym.com
+Description: The theme for HydeParkGym.com
+Author: James Seppi
+Author URI: http://coseppi.com/
+
+License: MIT
+License URI: http://www.opensource.org/licenses/MIT
+
+*/
+
+@font-face {
+    font-family: 'Conduit';
+    src: url('fonts/conduit_itc-webfont.eot');
+    src: url('fonts/conduit_itc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/conduit_itc-webfont.woff') format('woff'),
+         url('fonts/conduit_itc-webfont.ttf') format('truetype'),
+         url('fonts/conduit_itc-webfont.svg#ConduitITCRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body 
+{
+    background: url('images/txture.png');
+}
+
+hr
+{
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #222;
+}
+
+h1, h2, h3, h4 
+{
+    font-family: Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0px 3px 2px #222;
+}
+
+/* Header */
+header.site-header
+{
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+
+header.site-header .site-header-text
+{
+    background:url('images/arm_red_100.png') no-repeat;
+    min-height:104px;
+    padding-left: 84px;
+    position:relative;
+    margin:12px 0;
+}
+
+.site-header-text .site-tagline
+{
+    position:absolute;
+    bottom:10px;
+    text-shadow: 0px 3px 2px #222;
+    color: #DDD;
+}
+
+.site-header a.header-link:hover 
+{
+    text-decoration: none;
+}
+
+.site-header h1 
+{
+    color: #fe2020;
+    
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 34px;
+    text-shadow: 0px 2px 2px #000;
+    /*
+    font-size: 54px;
+    line-height: 2px;
+    font-weight: 100;
+    */
+
+    font: 48px/50px 'Conduit', Arial, sans-serif;
+    letter-spacing: 0;
+}
+
+.header-widgets
+{
+    float:right;
+    margin-top:40px;
+    margin-right:100px;
+}
+
+.site-header .widget 
+{
+    
+}
+
+
+/* Content */
+.main-content
+{
+
+}
+
+.main-content h2 a, .main-content h2 a:hover 
+{
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #C7FF68;
+}
+
+#top_nav_static 
+{
+    margin: 0;
+}
+
+.navbar .nav > li > a 
+{
+    color: #ccc;
+}
+
+/* Left Nav */
+.left-sidebar .nav.nav-list li a {
+    color: white;
+}
+
+.left-sidebar .nav.nav-list li a:hover {
+    background:red;
+}
+
+.left-sidebar .nav.nav-list li {
+    
+    border-bottom: 1px solid #666;
+    color:white;
+    text-align: right;
+}
+
+
+
+/* Footer */
+footer 
+{
+    text-align: center;
+    color: #AAA;
+    font-size: 12px;
+    line-height: 13px;
+}
+
+footer p
+{
+    font-size: 12px;
+    line-height: 13px;
+}
+
+
+
+
+
