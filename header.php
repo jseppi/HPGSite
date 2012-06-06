@@ -28,7 +28,7 @@
 <div class="container">
     
     <header class="site-header">
-        <div class="site-header-text">
+        <hgroup class="site-header-text">
             <a class="header-link" href="<?php echo get_site_url() ?>" title="Hyde Park Gym"><h1>Hyde Park Gym</h1></a>
             <div class="site-tagline">
                 <em>A friendly neighborhood gym in Hyde Park - Austin, TX</em>
@@ -39,8 +39,8 @@
         
                 <?php endif; ?>
             </div>
-        </div>
-        
+        </hgroup>
+     </header>
 
         
         <div class="navbar">
@@ -93,5 +93,5 @@
                 </div>
             </div>
         </div><!-- end navbar -->
-    </header>
+
 

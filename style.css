@@ -45,6 +45,7 @@ header.site-header
 {
     margin-top: 20px;
     margin-bottom: 9px;
+    background:rgba(0, 0, 0, 0.2);
 }
 
 header.site-header .site-header-text
@@ -53,7 +54,7 @@ header.site-header .site-header-text
     min-height:104px;
     padding-left: 84px;
     position:relative;
-    margin:12px 0;
+    margin: 12px 0 12px 8px;
 }
 
 .site-header-text .site-tagline
@@ -99,6 +100,20 @@ header.site-header .site-header-text
     
 }
 
+.right-sidebar h3.widget-title
+{
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 0 8px 0 0;
+    padding: 4px 0 0 8px;
+}
+
+.right-sidebar .widget
+{
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0 8px 0 0;
+    padding-bottom: 10px;
+}
+
 
 /* Content */
 .main-content
@@ -108,10 +123,16 @@ header.site-header .site-header-text
 
 .main-content h2 a, .main-content h2 a:hover 
 {
-    text-transform: uppercase;
     text-decoration: none;
+    color: #C7FF40;
+}
 
-    color: #C7FF68;
+.main-content article 
+{
+    padding:10px;
+    margin-bottom:10px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 0 12px 0 0;
 }
 
 #top_nav_static 

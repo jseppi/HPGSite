@@ -57,8 +57,6 @@
 
         
         <?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
-        <?php if ( 'post' == get_post_type() ) : ?>
-            <hr/>
-        <?php endif; ?>
+
     </footer><!-- #entry-meta -->
 </article><!-- #post-<?php the_ID(); ?> -->

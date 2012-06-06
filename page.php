@@ -20,7 +20,7 @@
     <?php //wp_nav_menu( $left_sidebar_args ); ?> 
 
     
-    <div class="span7 main-content">
+    <div class="span9 main-content">
 
         <?php while ( have_posts() ) : the_post(); ?>
 
