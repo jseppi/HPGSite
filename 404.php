@@ -17,22 +17,16 @@
       );
     ?>
 
-    <?php //wp_nav_menu( $left_sidebar_args ); ?>     
+    <?php //wp_nav_menu( $left_sidebar_args ); ?> 
+
     
-     <div class="span9 main-content">
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            
-            <?php get_template_part('content'); ?>
-            
-        <?php endwhile; else: ?>
-            <p>
-                <?php _e('Sorry, no posts found.'); ?>
-            </p>
-        <?php endif; ?>
-        <p>
-            <?php posts_nav_link(' &#8212; ', __('&laquo; Previous Page'), __('Next Page &raquo;')); ?>
-        </p>
-        
+    <div class="span9 main-content">
+
+        <div class="hero-unit">
+            <h1>OH SNAP! YOU GOT 404'D</h1>
+            <p>This ain't a page.  What were you even looking for? <a href="<?php get_home_url(); ?>">Get outta here!</a></p>
+        </div>
+    
     </div>
     
     <?php get_sidebar(); ?>

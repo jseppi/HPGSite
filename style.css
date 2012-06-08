@@ -10,6 +10,18 @@ License URI: http://www.opensource.org/licenses/MIT
 
 */
 
+
+/*
+
+hpg red:  #FE2020
+green: #1ACB1A
+orange: #FEBC20
+blue: #2842AD
+
+
+
+*/
+
 @font-face {
     font-family: 'Conduit';
     src: url('fonts/conduit_itc-webfont.eot');
@@ -46,6 +58,7 @@ header.site-header
     margin-top: 20px;
     margin-bottom: 9px;
     background:rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
 }
 
 header.site-header .site-header-text
@@ -55,6 +68,7 @@ header.site-header .site-header-text
     padding-left: 84px;
     position:relative;
     margin: 12px 0 12px 8px;
+
 }
 
 .site-header-text .site-tagline
@@ -124,7 +138,7 @@ header.site-header .site-header-text
 .main-content h2 a, .main-content h2 a:hover 
 {
     text-decoration: none;
-    color: #C7FF40;
+    color: #1ACB1A;
 }
 
 .main-content article 
@@ -132,7 +146,7 @@ header.site-header .site-header-text
     padding:10px;
     margin-bottom:10px;
     background: rgba(0, 0, 0, 0.25);
-    border-radius: 0 12px 0 0;
+    border-radius: 6px;
 }
 
 #top_nav_static 
@@ -161,7 +175,9 @@ header.site-header .site-header-text
     text-align: right;
 }
 
-
+.hero-unit {
+    background-color: rgba(0, 0, 0, 0.2);
+}
 
 /* Footer */
 footer 

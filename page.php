@@ -23,9 +23,36 @@
     <div class="span9 main-content">
 
         <?php while ( have_posts() ) : the_post(); ?>
-
-            <?php get_template_part( 'content', 'page' ); ?>
-
+            <article>
+                <header>
+                    <h2 id="post-<?php the_ID();?>">
+                        <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
+                    </h2>
+                 
+                    <?php if(function_exists('breadcrumbs')) { ?> 
+                        <div class="breadcrumbs">
+                            <?php breadcrumbs(); ?>
+                         </div>
+                     <?php } ?>
+                 
+                    <div class="meta">
+                        <?php edit_post_link(__('Edit This')); ?>	
+                    </div>
+                </header>
+                <div class="entry-body">
+                    <?php if ( is_search() ) : // Only display Excerpts for Search ?>
+                        <div class="entry-summary">
+                            <?php the_excerpt(); ?>
+                        </div><!-- .entry-summary -->
+                    <?php else : ?>
+                        <div class="entry-content">
+                            <?php the_content(); ?>
+                        </div><!-- .entry-content -->
+                    <?php endif; ?>
+                
+                </div>
+                
+            </article>
         <?php endwhile; // end of the loop. ?>
     </div>
     
