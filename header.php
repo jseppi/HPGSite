@@ -27,71 +27,81 @@
 
 <div class="container">
     
-    <header class="site-header">
-        <hgroup class="site-header-text">
-            <a class="header-link" href="<?php echo get_site_url() ?>" title="Hyde Park Gym"><h1>Hyde Park Gym</h1></a>
-            <div class="site-tagline">
-                <em>A friendly neighborhood gym in Hyde Park - Austin, TX</em>
-            </div>
-            
-            <div class="header-widgets">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('header-widgets') ) : ?>
-        
-                <?php endif; ?>
-            </div>
-        </hgroup>
-     </header>
-
-        
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+    
+    <header id="site-header" class="row">  
+        <div class="span12 header-wrap">
+            <div class="row">
+                <hgroup class="span5">
+                    <a href="<?php echo get_site_url(); ?>">
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/arm_red_100.png" title="Hyde Park Gym" alt="Logo"/>
                     </a>
                     
-                    <?php $top_static_args = array(
-
-                        'theme_location'  => 'top_nav_static',
-                        'container'       => '', 
-                        'container_class' => '',
-                        'menu_id'         => 'top_nav_static', 
-                        'menu_class'      => 'nav', 
-                        'echo'            => true,
-                        'fallback_cb'     => '',
-                        'items_wrap'      => '<ul id="%1$s" class="%2$s"><li>
-                                                <a href="' . get_site_url() . '"><i class="icon-home icon-white"></i></a>
-                                                </li>
-                                                <li class="divider-vertical"></li>
-                                                %3$s
-                                                </ul>',
-                        'depth'           => 0
-                        );
-                    ?>
-
-                    <?php wp_nav_menu( $top_static_args ); ?> 
-
-                    
-                    <?php $top_collapse_args = array(
-
-                        'theme_location'  => 'top_nav_collapse',
-                        'container'       => 'div', 
-                        'container_class' => 'nav-collapse',
-                        'menu_id'         => 'top_nav_collapse', 
-                        'menu_class'      => 'nav', 
-                        'echo'            => true,
-                        'fallback_cb'     => '',
-                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                        'depth'           => 0
-                        );
-                    ?>
-
-                    <?php wp_nav_menu( $top_collapse_args ); ?> 
-                    
+                    <h1>
+                        <a class="header-link" href="<?php echo get_site_url(); ?>" title="Hyde Park Gym">
+                            <?php bloginfo('name'); ?>
+                        </a>
+                    </h1>
+                    <div class="site-tagline">
+                        <em><?php bloginfo('description'); ?></em>
+                    </div>
+                </hgroup>
+                <div class="header-widgets span4 offset2">
+                    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('header-widgets') ) : ?>
+                
+                    <?php endif; ?>
                 </div>
             </div>
-        </div><!-- end navbar -->
+        </div>
+    </header>    
+     
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                
+                <?php $top_static_args = array(
 
+                    'theme_location'  => 'top_nav_static',
+                    'container'       => '', 
+                    'container_class' => '',
+                    'menu_id'         => 'top_nav_static', 
+                    'menu_class'      => 'nav', 
+                    'echo'            => true,
+                    'fallback_cb'     => '',
+                    'items_wrap'      => '<ul id="%1$s" class="%2$s"><li>
+                                            <a href="' . get_site_url() . '"><i class="icon-home icon-white"></i></a>
+                                            </li>
+                                            <li class="divider-vertical"></li>
+                                            %3$s
+                                            </ul>',
+                    'depth'           => 0
+                    );
+                ?>
 
+                <?php wp_nav_menu( $top_static_args ); ?> 
+
+                
+                <?php $top_collapse_args = array(
+
+                    'theme_location'  => 'top_nav_collapse',
+                    'container'       => 'div', 
+                    'container_class' => 'nav-collapse',
+                    'menu_id'         => 'top_nav_collapse', 
+                    'menu_class'      => 'nav', 
+                    'echo'            => true,
+                    'fallback_cb'     => '',
+                    'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                    'depth'           => 0
+                    );
+                ?>
+
+                <?php wp_nav_menu( $top_collapse_args ); ?> 
+                
+            </div>
+        </div>
+    </div><!-- end navbar -->
+    
