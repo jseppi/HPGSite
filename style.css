@@ -146,6 +146,33 @@ h1, h2, h3, h4
     color: #ccc;
 }
 
+/* Trainer Blurb */
+.trainer-blurb {
+    border-radius: 6px;
+    padding: 4px 4px 0px 4px;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.trainer-blurb h3 {
+    font-size:24px;
+}
+
+.trainer-blurb img {
+    float: left; 
+    margin-right: 4px; 
+    margin-bottom: 4px;
+    width: 70px;
+    height: 70px;
+}
+
+.trainer-blurb .contactInfo {
+    clear: both;
+}
+
+.trainer-blurb .contactInfo p {
+    margin-bottom: 2px;
+}
+
 /* Left Nav */
 .left-sidebar .nav.nav-list li a {
     color: white;
@@ -174,6 +201,8 @@ h1, h2, h3, h4
 .hero-unit {
     background-color: rgba(0, 0, 0, 0.2);
     padding: 20px;
+    min-height:234px;
+    margin-bottom:10px;
 }
 
 .hero-unit h3 {
