@@ -1,3 +1,3 @@
-# How does it work?
+# HYDE PARK GYM
 
-Enter Text in Markdown format.
+New web design for Hyde Park Gym.
