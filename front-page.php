@@ -34,36 +34,10 @@
             <div class="span5">
                 <div id="main-carousel" class="carousel slide">
                     <!-- Carousel items -->
-                    <div class="carousel-inner">
-                        <div class="active item">
-                            <a href="#video_modal" data-toggle="modal"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/video_teaser.jpg" alt="Video Teaser" title="Watch the Hyde Park Gym featurette!" /></a>
-                            <div class="carousel-caption">
-                                <h4>Watch to learn what Hyde Park Gym is all about</h4>
-                                <p>This short <a href="http://youtu.be/bcOtvx_dHUc" target="_blank">video</a> will introduce you to the community gym feel that is embodied by Hyde Park Gym.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/hyde-park-gym-sunset-austin-texas.jpg" alt="HPG Sunset" title="Hyde Park Gym" />
-                            <div class="carousel-caption">
-                                <h4>Mailing List</h4>
-                                <p>Sign up here to get on the HPG Mailing List</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/equinox.jpg" alt="HPG Equinox" title="Hyde Park Gym" />
-                            <div class="carousel-caption">
-                                <h4>Merchandise</h4>
-                                <p>Check our the merchandise section to show off your HPG pride.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/weights.jpg" alt="HPG Weights" title="Hyde Park Gym" />
-                            <div class="carousel-caption">
-                                <h4>Personal Trainers</h4>
-                                <p>Hyde Park Gym trainers will help you reach <em>your</em> fitness goals.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <?php  query_posts( array ( 'category_name' => 'carousel', 'posts_per_page' => -1 ) );  ?>
+                        <?php while ( have_posts() ) : the_post(); ?>    
+                            <?php the_content(); ?>
+                    <?php endwhile; ?>
                     <!-- Carousel nav -->
                     <a class="carousel-control left" href="#main-carousel" data-slide="prev">&lsaquo;</a>
                     <a class="carousel-control right" href="#main-carousel" data-slide="next">&rsaquo;</a>
