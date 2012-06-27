@@ -31,7 +31,7 @@
         </div>
     
         <div class="row">
-            <div class="span5">
+            <div class="span6">
                 <div id="main-carousel" class="carousel slide">
                     <!-- Carousel items -->
                     <?php  query_posts( array ( 'category_name' => 'carousel', 'posts_per_page' => -1 ) );  ?>
@@ -45,7 +45,7 @@
             </div>
             
             
-            <div class="span4">
+            <div class="span3">
                 <div class="hero-unit">
                     <h3>Location</h3>
                     <address>

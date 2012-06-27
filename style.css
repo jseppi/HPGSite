@@ -183,7 +183,6 @@ h1, h2, h3, h4
 }
 
 .left-sidebar .nav.nav-list li {
-    
     border-bottom: 1px solid #666;
     color:white;
     text-align: right;
@@ -201,7 +200,6 @@ h1, h2, h3, h4
 .hero-unit {
     background-color: rgba(0, 0, 0, 0.2);
     padding: 20px;
-    min-height:234px;
     margin-bottom:10px;
 }
 
