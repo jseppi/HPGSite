@@ -32,16 +32,10 @@
     
         <div class="row">
             <div class="span6">
-                <div id="main-carousel" class="carousel slide">
-                    <!-- Carousel items -->
-                    <?php  query_posts( array ( 'category_name' => 'carousel', 'posts_per_page' => -1 ) );  ?>
-                        <?php while ( have_posts() ) : the_post(); ?>    
-                            <?php echo make_carousel(); ?>
-                    <?php endwhile; ?>
-                    <!-- Carousel nav -->
-                    <a class="carousel-control left" href="#main-carousel" data-slide="prev">&lsaquo;</a>
-                    <a class="carousel-control right" href="#main-carousel" data-slide="next">&rsaquo;</a>
-                </div>
+                <?php  query_posts( array ( 'category_name' => 'carousel', 'posts_per_page' => -1 ) );  ?>
+                    <?php while ( have_posts() ) : the_post(); ?>    
+                        <?php echo make_carousel(); ?>
+                <?php endwhile; ?>
             </div>
             
             
