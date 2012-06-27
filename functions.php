@@ -83,7 +83,7 @@ function make_carousel() {
         }   
     } 
 
-    $build = "";
+    $build = "<div id='main-carousel' class='carousel slide'>";
     $build .= "<div class='carousel-inner'>";
 
     $first = true;
