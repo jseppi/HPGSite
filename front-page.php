@@ -36,7 +36,7 @@
                     <!-- Carousel items -->
                     <?php  query_posts( array ( 'category_name' => 'carousel', 'posts_per_page' => -1 ) );  ?>
                         <?php while ( have_posts() ) : the_post(); ?>    
-                            <?php the_content(); ?>
+                            <?php echo make_carousel(); ?>
                     <?php endwhile; ?>
                     <!-- Carousel nav -->
                     <a class="carousel-control left" href="#main-carousel" data-slide="prev">&lsaquo;</a>
