@@ -126,12 +126,19 @@ h1, h2, h3, h4
 }
 
 /* Content */
+.news-heading {
+  background: rgba(0, 0, 0, .5);
+  border-radius: 6px 6px 0 0;
+  margin-bottom: -1px;
+  padding-left: 8px;
+}
+
 .main-content
 {
 
 }
 
-.main-content h2 a, .main-content h2 a:hover 
+.main-content h3 a, .main-content h3 a:hover 
 {
   text-decoration: none;
   color: #FE2020;

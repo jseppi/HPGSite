@@ -64,8 +64,13 @@
             </div>
         </div>
         
+        <div class="row">
+            <div class="span9">
+               <h2 class="news-heading">LATEST NEWS</h2>
+            </div>
+        </div>
 
-        <?php query_posts(  'cat=3,1' ); ?>
+        <?php query_posts(  array ( 'category_name' => 'news') ); ?>
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <?php get_template_part('content'); ?>
         <?php endwhile; else: ?>
