@@ -34,10 +34,9 @@
                             <?php breadcrumbs(); ?>
                          </div>
                      <?php } ?>
-                 
-                    <div class="meta">
-                        <?php edit_post_link(__('Edit This')); ?>	
-                    </div>
+
+                    <?php edit_post_link(__('Edit')); ?>	
+                    
                 </header>
                 <div class="entry-body">
                     <?php if ( is_search() ) : // Only display Excerpts for Search ?>

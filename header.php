@@ -6,7 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
-    <title><?php wp_title(''); ?> <?php if ( !(is_404()) && (is_single()) or (is_page()) or (is_archive()) ) { ?> :: <?php } ?> <?php bloginfo('name'); ?></title>
+    <title><?php
+	/*
+	 * Print the <title> tag based on what is being viewed.
+	 */
+	global $page, $paged;
+
+	wp_title( '|', true, 'right' );
+
+	// Add the blog name.
+	bloginfo( 'name' );
+
+	// Add the blog description for the home/front page.
+	$site_description = get_bloginfo( 'description', 'display' );
+	if ( $site_description && ( is_home() || is_front_page() ) )
+		echo " | $site_description";
+
+	// Add a page number if necessary:
+	if ( $paged >= 2 || $page >= 2 )
+		echo ' | ' . sprintf( __( 'Page %s', 'twentyten' ), max( $paged, $page ) );
+
+	?></title>
 
     <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- leave this for stats -->
 

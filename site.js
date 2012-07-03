@@ -1,9 +1,9 @@
-
-
-$(function() {
-
-    $('.carousel').carousel({
-        interval: 10000
-    });
-    
+
+
+$(function() {
+
+    $('.carousel').carousel({
+        interval: 10000
+    });
+    
 });

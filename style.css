@@ -81,10 +81,11 @@ h1, h2, h3, h4
 
 #site-header hgroup h1 a, #site-header hgroup h1 a:hover
 {
-    text-decoration: none;
-    color: #FE2020;
-    font-family: 'Conduit', Helvetica, Arial, sans-serif;
-    font-size:40px;
+  text-decoration: none;
+  color: #FE2020;
+  font-family: 'Conduit', Helvetica, Arial, sans-serif;
+  font-size:56px;
+  font-weight: 400;
 }
 
 #site-header hgroup h1 {
@@ -92,7 +93,8 @@ h1, h2, h3, h4
 }
 
 .site-tagline {
-    padding-left:10px;
+  padding-left:10px;
+  font-size: 14px;
  }
 
 .header-widgets {
@@ -106,6 +108,8 @@ h1, h2, h3, h4
     background: rgba(0, 0, 0, 0.25);
     border-radius: 6px 6px 0 0;
     padding: 4px 0 0 8px;
+    font-size: 16px;
+    color: #FE2020;
 }
 
 .right-sidebar .widget
@@ -113,8 +117,13 @@ h1, h2, h3, h4
     background: rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     padding-bottom: 10px;
+    margin-bottom: 8px;
 }
 
+.right-sidebar .textwidget
+{
+    padding: 8px;
+}
 
 /* Content */
 .main-content
@@ -124,9 +133,15 @@ h1, h2, h3, h4
 
 .main-content h2 a, .main-content h2 a:hover 
 {
-    text-decoration: none;
-    color: #1ACB1A;
+  text-decoration: none;
+  color: #FE2020;
+  font-weight: 600;
 }
+
+.main-content h3, .main-content h4, .main-content strong {
+  color: #FEBC20;
+}
+
 
 .main-content article 
 {
@@ -134,6 +149,13 @@ h1, h2, h3, h4
     margin-bottom:10px;
     background: rgba(0, 0, 0, 0.25);
     border-radius: 6px;
+}
+
+.main-content .sticky p
+{
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px;
 }
 
 #top_nav_static 
@@ -144,6 +166,11 @@ h1, h2, h3, h4
 .navbar .nav > li > a 
 {
     color: #ccc;
+}
+
+img.alignright {
+  float:right;
+  padding-right:40px;
 }
 
 /* Trainer Blurb */
@@ -207,6 +234,10 @@ h1, h2, h3, h4
     color:#FE2020;
 }
 
+.hero-unit h4 {
+  color: #FEBC20;
+  margin-top: 10px;
+}
 
 #horiz-trainer-list {
     margin: 0; padding: 0;
