@@ -39,14 +39,35 @@
 
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+  
+    <script type="text/javascript">
 
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-8140381-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
+    </script>
+  
     <?php wp_head(); ?>
 </head>
 
 <body>
 
 <div class="container">
-    
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=142447483241";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     
     <header id="site-header" class="row">  
         <div class="span12 header-wrap">
@@ -65,7 +86,7 @@
                         <em><?php bloginfo('description'); ?></em>
                     </div>
                 </hgroup>
-                <div class="header-widgets span4 offset2">
+                <div class="header-widgets span6 offset1">
                     <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('header-widgets') ) : ?>
                 
                     <?php endif; ?>
